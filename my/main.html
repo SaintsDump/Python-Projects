@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Personal Portfolio(Dawn Nerona)</title>
+  <link rel="stylesheet" href="design.css">
+</head>
+<body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="img/logo1.png" class="logo">
+          <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+          <div class="htext">
+            <p>UI/UX DESIGN</p>
+            <h1>Hi, I'm <span>Dawn Nerona</span><br>from Philippines</h1>
+          </div>
+      </div>
+    </div>
+
+<!------------about me --------->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col1">
+          <img src="img/user.png">
+        </div>
+        <div class="about-col2">
+          <h1 class="sub">About Me</h1>
+          <p>My name is Dawn Nerona. I'm an AISAT student at BC3ED Computer Science Department. I was born and raised in Cavite. <br>
+            <br>
+          I did Computer Science from AISAT College Of Engineering and Technology. Then I worked for Infosys and Web Development  Mysore for 1 year.<br>
+          <br>
+          I like to travel. I believe travelling gives you a new perspective to everything. You get to know a lot about the different cultures, the cuisines, their history, the language and all the small unique things every place has to offer.</p>
+
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links"onclick="opentab('experience')">Experience</p>
+            <p class="tab-links"onclick="opentab('education')">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>UI?UX</span><br>Designing Web/App Interfaces</li>
+              <li><span>Web Development</span><br>Web App Development</li>
+              <li><span>App Development</span><br>Building Android/ios apps</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>2023 - Current</span><br>UI Design Training at Tesda Government Institute</li>
+              <li><span>2021 - 2022</span><br>Web Development training at NobleProg Philippines</li>
+              <li><span>2020 - 2021</span><br>App Development training at CIIT Philippine School </li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>2021</span><br>AISAT school</li>
+              <li><span>2017</span><br>Cavite National Highschool </li>
+              <li><span>2016</span><br>Cavite elementary school </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!---------Services---------->
+
+
+
+  <div id="services">
+    <div class="container">
+      <h1> My Services </h1>
+      <div class="services-list">
+        <div>
+          <h2>Web Design</h2>
+          <p>provides you with a customized website design that's perfect for your business or personal site. 
+            <br> They'll work with you to create a design that matches your brand,<br>
+             while giving your customers a seamless user experience that will delight them.</p>
+              <a href="#">Learn More!</a>
+        </div>
+        <div>
+          <h2>UI/UX Design</h2>
+          <p>provides you with a customized website design that's perfect for your business or personal site. 
+            <br> They'll work with you to create a design that matches your brand,<br>
+             while giving your customers a seamless user experience that will delight them.</p>
+              <a href="#">Learn More!</a>
+        </div>
+        <div>
+          <h2>App Development</h2>
+          <p>provides you with a customized website design that's perfect for your business or personal site. 
+            <br> They'll work with you to create a design that matches your brand,<br>
+             while giving your customers a seamless user experience that will delight them.</p>
+              <a href="#">Learn More!</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<script>
+  var tablinks = document.getElementsByClassName("tab-links");
+  var tabcontents = document.getElementsByClassName("tab-contents");
+
+  function opentab(tabname){
+      for(tablink of tablinks){
+      tablink.classList.remove("active-link");
+    }
+      for(tabcontent of tabcontents){
+      tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab")
+  }
+
+</script>
+
+</body>
+</html>
